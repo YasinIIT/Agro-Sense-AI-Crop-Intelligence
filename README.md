@@ -6,12 +6,12 @@ Project ID: P139 | Domain: Precision Agriculture, Remote Sensing, Generative AI
 
 (Replace the link above with the actual path to your dashboard screenshot after uploading it)
 
-Overview
+**Overview**
 
 Agro-Sense AI is a "Digital Twin" system for agriculture that moves farming from reactive monitoring to proactive intelligence. It fuses Sentinel-2 satellite imagery with simulated IoT sensor data to detect invisible crop stress, predict harvest yields months in advance, and provide actionable, AI-driven advisory services to farmers.
 
-Key Features
-
+**Key Features
+**
 Data Fusion Architecture: Combines macro-scale Satellite data (NDVI, EVI) with micro-scale IoT data (Soil Moisture, Leaf Wetness) to eliminate blind spots during cloudy weather.
 
 High-Fidelity Modeling: Trained on 10+ years of ground-truth historical farm records (369 crop cycles).
@@ -24,8 +24,8 @@ AI Agronomist Agent: Integrates Google Gemini Pro (LLM) to translate complex dat
 
 Interactive Dashboard: A full-stack Streamlit web application featuring dynamic Earth Engine maps and real-time analytics.
 
-Tech Stack
-
+**Tech Stack
+**
 Languages: Python (Pandas, NumPy)
 
 ML/DL: TensorFlow (Keras), Scikit-Learn (Random Forest, SMOTE), XGBoost
@@ -36,7 +36,7 @@ Generative AI: Google Gemini Pro API (google-generativeai)
 
 Web Framework: Streamlit, Plotly, PyNgrok
 
-Project Structure
+**Project Structure**
 
 01_Model_Training_Pipeline.ipynb: The "Brain" of the system. Contains:
 
@@ -54,7 +54,7 @@ Streamlit Dashboard code.
 
 Gemini AI Agent integration logic.
 
-Methodology & Results
+**Methodology & Results**
 
 Phase 1: Real-Time Monitoring
 
@@ -68,7 +68,7 @@ Phase 3: The Intelligence Layer
 
 We integrated a Large Language Model (LLM) to act as a reasoning engine. By feeding model predictions (e.g., "Flowering Stage") and weather data (e.g., "Rainy") into the LLM, the system generates specific warnings about risks like fungal diseases, bridging the gap between data science and agronomy.
 
-Future Scope
+**Future Scope**
 
 IoT Hardware Integration: Replace simulated data with physical LoRaWAN soil sensors.
 
