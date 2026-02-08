@@ -1,0 +1,32 @@
+# Agro-Sense AI - Crop Intelligence System
+# Core Dependencies
+
+# Data Processing
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Machine Learning
+tensorflow>=2.10.0
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+imbalanced-learn>=0.10.0  # For SMOTE
+
+# Geospatial
+earthengine-api>=0.1.350
+geemap>=0.20.0
+geopy>=2.3.0
+
+# Generative AI
+google-generativeai>=0.3.0
+
+# Web Framework
+streamlit>=1.20.0
+plotly>=5.13.0
+
+# Utilities
+python-dotenv>=1.0.0  # For secure API key management
+pyngrok>=5.1.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.20.0

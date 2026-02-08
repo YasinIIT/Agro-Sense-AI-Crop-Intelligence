@@ -36,6 +36,48 @@ Generative AI: Google Gemini Pro API (google-generativeai)
 
 Web Framework: Streamlit, Plotly, PyNgrok
 
+**Setup Instructions**
+
+⚠️ **Security Notice**: This project requires Google API keys. Please follow the security best practices outlined in [SECURITY.md](SECURITY.md).
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/YasinIIT/Agro-Sense-AI-Crop-Intelligence.git
+cd Agro-Sense-AI-Crop-Intelligence
+```
+
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+3. **Configure API Keys (Important!)**
+
+   a. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+   b. Get your API keys:
+   - **Google Gemini API**: Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - **Google Earth Engine**: Follow [GEE Python Installation Guide](https://developers.google.com/earth-engine/guides/python_install)
+
+   c. Edit `.env` and add your keys:
+   ```
+   GOOGLE_API_KEY=your_actual_gemini_api_key_here
+   ```
+
+   d. **NEVER commit the `.env` file to git!** It's already in `.gitignore`.
+
+4. **Authenticate with Google Earth Engine**
+```bash
+earthengine authenticate
+```
+
+5. **Run the notebooks**
+   - Start with `01_Model_Training_Pipeline.ipynb` for model training
+   - Then use `02_Dashboard_and_App.ipynb` for the dashboard
+
 **Project Structure**
 
 01_Model_Training_Pipeline.ipynb: The "Brain" of the system. Contains:
@@ -75,5 +117,14 @@ IoT Hardware Integration: Replace simulated data with physical LoRaWAN soil sens
 Computer Vision: Implement "Doctor Leaf" module for pest detection via smartphone camera.
 
 Automated Alerts: WhatsApp/SMS integration for daily crop status updates.
+
+**Security**
+
+🔒 This project uses API keys that must be kept secure. Please read our [Security Policy](SECURITY.md) for:
+- How to properly configure API keys
+- What to do if you accidentally expose credentials
+- Best practices for keeping your keys secure
+
+**Important**: Never commit API keys, credentials, or `.env` files to git!
 
 Developed by Khilji Mohammed Yasin & Shaik Mohammad Thousif as part of the Open Ended Lab Project (OELP).
