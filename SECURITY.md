@@ -16,7 +16,7 @@ This project uses Google Cloud Platform APIs (Gemini Pro and Earth Engine). **NE
 
 ### ⚠️ Previous Security Incident
 
-A Google API key was previously exposed in this repository. If you cloned or forked this repository before [DATE], please:
+A Google API key was previously exposed in this repository. If you cloned or forked this repository before February 8, 2026, please:
 
 1. **Regenerate any API keys** you may have used
 2. **Check your Google Cloud Console** for unexpected usage

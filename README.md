@@ -49,7 +49,6 @@ cd Agro-Sense-AI-Crop-Intelligence
 2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
-pip install python-dotenv
 ```
 
 3. **Configure API Keys (Important!)**
